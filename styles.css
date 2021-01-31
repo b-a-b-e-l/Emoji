@@ -1,0 +1,85 @@
+html {
+  height: 100vh;
+  font-family: Baloo;
+}
+
+body {
+  margin-top: 15px;
+  padding: 10px;
+  background-image: linear-gradient(#b2eee6, #fff);
+}
+
+#emoji-container {
+  margin: 40px;
+  text-align: center;
+}
+
+#emoji-container span {
+  margin: 10px;
+  font-size: 60px;
+}
+
+#push-btn,
+#unshift-btn {
+  background-color: #8ad6cc;
+}
+
+#shift-btn,
+#pop-btn {
+  background-color: #f67171;
+}
+h1 {
+  font-size: 90px;
+  font-weight: 400;
+  font-family: "Rubik Mono One", sans-serif;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #008891;
+}
+.title:before {
+  content: "";
+  animation: animate linear infinite 5s;
+}
+@keyframes animate {
+  0% {
+    content: "PUSH";
+  }
+  50% {
+    content: "POP";
+  }
+  60% {
+    content: "SHIFT";
+  }
+  100% {
+    content: "(UN)SHIFT";
+  }
+}
+
+input {
+  margin: 20 auto;
+  display: block;
+  border: none;
+  height: 50px;
+  font-size: 25px;
+  background: white;
+  border-radius: 6px;
+  text-align: center;
+}
+
+button {
+  font-size: 16px;
+  font-family: Baloo;
+  letter-spacing: 1px;
+  background: darkcyan;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 10px;
+}
+
+.buttons-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
